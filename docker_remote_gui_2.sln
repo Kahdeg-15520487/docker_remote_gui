@@ -1,0 +1,64 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.0.0
+MinimumVisualStudioVersion = 16.0.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "docker_remote_gui_2.Server", "Server\docker_remote_gui_2.Server.csproj", "{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "docker_remote_gui_2.Client", "Client\docker_remote_gui_2.Client.csproj", "{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "docker_remote_gui_2.Shared", "Shared\docker_remote_gui_2.Shared.csproj", "{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Debug|x64.Build.0 = Debug|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Debug|x86.Build.0 = Debug|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Release|x64.ActiveCfg = Release|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Release|x64.Build.0 = Release|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Release|x86.ActiveCfg = Release|Any CPU
+		{AE90EC3C-8206-4418-88BA-1F2E7F5994FA}.Release|x86.Build.0 = Release|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Debug|x64.Build.0 = Debug|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Debug|x86.Build.0 = Debug|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Release|x64.ActiveCfg = Release|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Release|x64.Build.0 = Release|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Release|x86.ActiveCfg = Release|Any CPU
+		{AFDB6E9A-29C7-48F4-A3A7-33F634B4444E}.Release|x86.Build.0 = Release|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Debug|x64.Build.0 = Debug|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Debug|x86.Build.0 = Debug|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Release|x64.ActiveCfg = Release|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Release|x64.Build.0 = Release|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Release|x86.ActiveCfg = Release|Any CPU
+		{5AF3D62B-D03B-44D7-ABB2-924D64B40C82}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {990FE2CE-B89D-4A90-A80B-8EAA97339F3D}
+	EndGlobalSection
+EndGlobal

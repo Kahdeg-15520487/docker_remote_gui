@@ -1,0 +1,60 @@
+@page "/test"
+@using docker_remote_gui_2.Shared
+@inject HttpClient Http
+@inject ClipboardService ClipboardService
+@inject ToastService toastService
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (containers == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Container ID</th>
+                <th>Image</th>
+                <th>Command</th>
+                <th>Created</th>
+                <th>Status</th>
+                <th>Ports</th>
+                <th>Names</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var container in containers)
+            {
+                <tr>
+                    <td @onclick="@(e => Copy(container.Id))">@container.Id</td>
+                    <td>@container.Image</td>
+                    <td>@container.Command</td>
+                    <td>@container.Created</td>
+                    <td>@container.Status</td>
+                    <td>@String.Join(", ",container.Ports)</td>
+                    <td>@String.Join(", ",container.Names)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private ContainerListResponse[] containers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        containers = await Http.GetFromJsonAsync<ContainerListResponse[]>("WeatherForecast/docker");
+    }
+
+    private async void Copy(string containerId)
+    {
+        await ClipboardService.WriteTextAsync(containerId);
+        toastService.ShowToast($"Copied {containerId}", ToastLevel.Success);
+    }
+
+}
